@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB2C65942C09CED10016BA98 /* PathObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C65932C09CED10016BA98 /* PathObjects.swift */; };
+		CB2C65962C09D8530016BA98 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C65952C09D8530016BA98 /* GameView.swift */; };
+		CB2C65982C0B46A00016BA98 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C65972C0B46A00016BA98 /* ResultsView.swift */; };
+		CB2C659A2C0B77A40016BA98 /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C65992C0B77A40016BA98 /* ResultsCell.swift */; };
+		CB82FA6C2C06445700061A37 /* MozzartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA6B2C06445700061A37 /* MozzartApp.swift */; };
+		CB82FA6E2C06445700061A37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA6D2C06445700061A37 /* ContentView.swift */; };
+		CB82FA702C06445900061A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB82FA6F2C06445900061A37 /* Assets.xcassets */; };
+		CB82FA732C06445900061A37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB82FA722C06445900061A37 /* Preview Assets.xcassets */; };
+		CB82FA7A2C0644C800061A37 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA792C0644C700061A37 /* WebSocketManager.swift */; };
+		CB82FA7C2C064B0800061A37 /* SocketStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA7B2C064B0800061A37 /* SocketStream.swift */; };
+		CB82FA7E2C064B3B00061A37 /* URLSessionWebSocketTask + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA7D2C064B3B00061A37 /* URLSessionWebSocketTask + Extension.swift */; };
+		CB82FA862C065B0700061A37 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA852C065B0700061A37 /* EnvironmentConfiguration.swift */; };
+		CB82FA882C065C0E00061A37 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA872C065C0E00061A37 /* NetworkConfiguration.swift */; };
+		CB82FA8A2C065C5A00061A37 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA892C065C5A00061A37 /* HTTPMethod.swift */; };
+		CB82FA8C2C065C6E00061A37 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA8B2C065C6E00061A37 /* Requestable.swift */; };
+		CB82FA902C065D8500061A37 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA8F2C065D8500061A37 /* NetworkService.swift */; };
+		CB82FA932C065DED00061A37 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA922C065DED00061A37 /* NetworkError.swift */; };
+		CB82FA962C065F8100061A37 /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA952C065F8100061A37 /* GamesModel.swift */; };
+		CB82FA992C065FBF00061A37 /* Encode_Decode_Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA982C065FBF00061A37 /* Encode_Decode_Helpers.swift */; };
+		CB82FA9B2C06632100061A37 /* GamesModelApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA9A2C06632100061A37 /* GamesModelApi.swift */; };
+		CB82FA9D2C06638300061A37 /* GamesModelEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FA9C2C06638300061A37 /* GamesModelEndpoint.swift */; };
+		CB82FAA22C0666A200061A37 /* SingleGameModelApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAA12C0666A200061A37 /* SingleGameModelApi.swift */; };
+		CB82FAA42C0666C200061A37 /* SingleGameEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAA32C0666C200061A37 /* SingleGameEndpoint.swift */; };
+		CB82FAA62C066B8F00061A37 /* GamesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAA52C066B8F00061A37 /* GamesService.swift */; };
+		CB82FAA82C066C5800061A37 /* SingleGameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAA72C066C5800061A37 /* SingleGameService.swift */; };
+		CB82FAAB2C066F3B00061A37 /* GameResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAAA2C066F3B00061A37 /* GameResultsModel.swift */; };
+		CB82FAAD2C06706A00061A37 /* GameResultsModelApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAAC2C06706A00061A37 /* GameResultsModelApi.swift */; };
+		CB82FAAF2C06716000061A37 /* GameResultsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAAE2C06716000061A37 /* GameResultsEndpoint.swift */; };
+		CB82FAB12C06733F00061A37 /* GamesResultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAB02C06733F00061A37 /* GamesResultsService.swift */; };
+		CB82FAB42C072F7C00061A37 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAB32C072F7C00061A37 /* ViewModel.swift */; };
+		CB82FAB72C0745AA00061A37 /* KinoSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAB62C0745AA00061A37 /* KinoSegmentedControl.swift */; };
+		CB82FABA2C0772A500061A37 /* AnyPublisher + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAB92C0772A500061A37 /* AnyPublisher + Extension.swift */; };
+		CB82FABC2C0776C700061A37 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FABB2C0776C700061A37 /* WebView.swift */; };
+		CB82FABE2C07C44600061A37 /* KinoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FABD2C07C44600061A37 /* KinoCell.swift */; };
+		CB82FAC02C08AED600061A37 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FABF2C08AED600061A37 /* Stopwatch.swift */; };
+		CB82FAC22C08D78D00061A37 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAC12C08D78D00061A37 /* View + Extension.swift */; };
+		CB82FAC42C08DDF100061A37 /* KinoGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82FAC32C08DDF100061A37 /* KinoGamesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB2C65932C09CED10016BA98 /* PathObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathObjects.swift; sourceTree = "<group>"; };
+		CB2C65952C09D8530016BA98 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CB2C65972C0B46A00016BA98 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		CB2C65992C0B77A40016BA98 /* ResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
+		CB82FA682C06445700061A37 /* Mozzart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mozzart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB82FA6B2C06445700061A37 /* MozzartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MozzartApp.swift; sourceTree = "<group>"; };
+		CB82FA6D2C06445700061A37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB82FA6F2C06445900061A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB82FA722C06445900061A37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB82FA792C0644C700061A37 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		CB82FA7B2C064B0800061A37 /* SocketStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketStream.swift; sourceTree = "<group>"; };
+		CB82FA7D2C064B3B00061A37 /* URLSessionWebSocketTask + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionWebSocketTask + Extension.swift"; sourceTree = "<group>"; };
+		CB82FA852C065B0700061A37 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
+		CB82FA872C065C0E00061A37 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		CB82FA892C065C5A00061A37 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CB82FA8B2C065C6E00061A37 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		CB82FA8F2C065D8500061A37 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CB82FA922C065DED00061A37 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CB82FA952C065F8100061A37 /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
+		CB82FA982C065FBF00061A37 /* Encode_Decode_Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encode_Decode_Helpers.swift; sourceTree = "<group>"; };
+		CB82FA9A2C06632100061A37 /* GamesModelApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModelApi.swift; sourceTree = "<group>"; };
+		CB82FA9C2C06638300061A37 /* GamesModelEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModelEndpoint.swift; sourceTree = "<group>"; };
+		CB82FAA12C0666A200061A37 /* SingleGameModelApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGameModelApi.swift; sourceTree = "<group>"; };
+		CB82FAA32C0666C200061A37 /* SingleGameEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGameEndpoint.swift; sourceTree = "<group>"; };
+		CB82FAA52C066B8F00061A37 /* GamesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesService.swift; sourceTree = "<group>"; };
+		CB82FAA72C066C5800061A37 /* SingleGameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGameService.swift; sourceTree = "<group>"; };
+		CB82FAAA2C066F3B00061A37 /* GameResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultsModel.swift; sourceTree = "<group>"; };
+		CB82FAAC2C06706A00061A37 /* GameResultsModelApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultsModelApi.swift; sourceTree = "<group>"; };
+		CB82FAAE2C06716000061A37 /* GameResultsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultsEndpoint.swift; sourceTree = "<group>"; };
+		CB82FAB02C06733F00061A37 /* GamesResultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesResultsService.swift; sourceTree = "<group>"; };
+		CB82FAB32C072F7C00061A37 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CB82FAB62C0745AA00061A37 /* KinoSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoSegmentedControl.swift; sourceTree = "<group>"; };
+		CB82FAB92C0772A500061A37 /* AnyPublisher + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher + Extension.swift"; sourceTree = "<group>"; };
+		CB82FABB2C0776C700061A37 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CB82FABD2C07C44600061A37 /* KinoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoCell.swift; sourceTree = "<group>"; };
+		CB82FABF2C08AED600061A37 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		CB82FAC12C08D78D00061A37 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
+		CB82FAC32C08DDF100061A37 /* KinoGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoGamesView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB82FA652C06445700061A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB82FA5F2C06445700061A37 = {
+			isa = PBXGroup;
+			children = (
+				CB82FA6A2C06445700061A37 /* Mozzart */,
+				CB82FA692C06445700061A37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB82FA692C06445700061A37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA682C06445700061A37 /* Mozzart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB82FA6A2C06445700061A37 /* Mozzart */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA6F2C06445900061A37 /* Assets.xcassets */,
+				CB82FA712C06445900061A37 /* Preview Content */,
+				CB82FA6B2C06445700061A37 /* MozzartApp.swift */,
+				CB82FA6D2C06445700061A37 /* ContentView.swift */,
+				CB82FAB32C072F7C00061A37 /* ViewModel.swift */,
+				CB82FAB82C07729800061A37 /* Helpers */,
+				CB82FAB52C0744C300061A37 /* Components */,
+				CB82FA7F2C065A0200061A37 /* WebSocket */,
+				CB82FA802C065A1500061A37 /* Networking */,
+			);
+			path = Mozzart;
+			sourceTree = "<group>";
+		};
+		CB82FA712C06445900061A37 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA722C06445900061A37 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB82FA7F2C065A0200061A37 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA792C0644C700061A37 /* WebSocketManager.swift */,
+				CB82FA7B2C064B0800061A37 /* SocketStream.swift */,
+				CB82FA7D2C064B3B00061A37 /* URLSessionWebSocketTask + Extension.swift */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		CB82FA802C065A1500061A37 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA972C065FA200061A37 /* Helpers */,
+				CB82FA912C065DE400061A37 /* Error */,
+				CB82FA832C065A4200061A37 /* Requestable */,
+				CB82FA812C065A2F00061A37 /* Configuration */,
+				CB82FA842C065A4B00061A37 /* MainService */,
+				CB82FA822C065A3900061A37 /* NetworkServices */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB82FA812C065A2F00061A37 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA852C065B0700061A37 /* EnvironmentConfiguration.swift */,
+				CB82FA872C065C0E00061A37 /* NetworkConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CB82FA822C065A3900061A37 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FAB22C071FF300061A37 /* Models */,
+				CB82FAA92C066F1300061A37 /* GameResultsApi */,
+				CB82FA9E2C06651F00061A37 /* GameApi */,
+				CB82FA942C065F1300061A37 /* GamesApi */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		CB82FA832C065A4200061A37 /* Requestable */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA892C065C5A00061A37 /* HTTPMethod.swift */,
+				CB82FA8B2C065C6E00061A37 /* Requestable.swift */,
+			);
+			path = Requestable;
+			sourceTree = "<group>";
+		};
+		CB82FA842C065A4B00061A37 /* MainService */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA8F2C065D8500061A37 /* NetworkService.swift */,
+			);
+			path = MainService;
+			sourceTree = "<group>";
+		};
+		CB82FA912C065DE400061A37 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA922C065DED00061A37 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		CB82FA942C065F1300061A37 /* GamesApi */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA9A2C06632100061A37 /* GamesModelApi.swift */,
+				CB82FA9C2C06638300061A37 /* GamesModelEndpoint.swift */,
+				CB82FAA52C066B8F00061A37 /* GamesService.swift */,
+			);
+			path = GamesApi;
+			sourceTree = "<group>";
+		};
+		CB82FA972C065FA200061A37 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA982C065FBF00061A37 /* Encode_Decode_Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB82FA9E2C06651F00061A37 /* GameApi */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FAA12C0666A200061A37 /* SingleGameModelApi.swift */,
+				CB82FAA32C0666C200061A37 /* SingleGameEndpoint.swift */,
+				CB82FAA72C066C5800061A37 /* SingleGameService.swift */,
+			);
+			path = GameApi;
+			sourceTree = "<group>";
+		};
+		CB82FAA92C066F1300061A37 /* GameResultsApi */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FAAC2C06706A00061A37 /* GameResultsModelApi.swift */,
+				CB82FAAE2C06716000061A37 /* GameResultsEndpoint.swift */,
+				CB82FAB02C06733F00061A37 /* GamesResultsService.swift */,
+			);
+			path = GameResultsApi;
+			sourceTree = "<group>";
+		};
+		CB82FAB22C071FF300061A37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FA952C065F8100061A37 /* GamesModel.swift */,
+				CB82FAAA2C066F3B00061A37 /* GameResultsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB82FAB52C0744C300061A37 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FAB62C0745AA00061A37 /* KinoSegmentedControl.swift */,
+				CB82FABB2C0776C700061A37 /* WebView.swift */,
+				CB82FABD2C07C44600061A37 /* KinoCell.swift */,
+				CB82FAC32C08DDF100061A37 /* KinoGamesView.swift */,
+				CB2C65952C09D8530016BA98 /* GameView.swift */,
+				CB2C65972C0B46A00016BA98 /* ResultsView.swift */,
+				CB2C65992C0B77A40016BA98 /* ResultsCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CB82FAB82C07729800061A37 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB82FAB92C0772A500061A37 /* AnyPublisher + Extension.swift */,
+				CB82FABF2C08AED600061A37 /* Stopwatch.swift */,
+				CB82FAC12C08D78D00061A37 /* View + Extension.swift */,
+				CB2C65932C09CED10016BA98 /* PathObjects.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB82FA672C06445700061A37 /* Mozzart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB82FA762C06445900061A37 /* Build configuration list for PBXNativeTarget "Mozzart" */;
+			buildPhases = (
+				CB82FA642C06445700061A37 /* Sources */,
+				CB82FA652C06445700061A37 /* Frameworks */,
+				CB82FA662C06445700061A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mozzart;
+			productName = Mozzart;
+			productReference = CB82FA682C06445700061A37 /* Mozzart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB82FA602C06445700061A37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CB82FA672C06445700061A37 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CB82FA632C06445700061A37 /* Build configuration list for PBXProject "Mozzart" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB82FA5F2C06445700061A37;
+			productRefGroup = CB82FA692C06445700061A37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB82FA672C06445700061A37 /* Mozzart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB82FA662C06445700061A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB82FA732C06445900061A37 /* Preview Assets.xcassets in Resources */,
+				CB82FA702C06445900061A37 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB82FA642C06445700061A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB82FA902C065D8500061A37 /* NetworkService.swift in Sources */,
+				CB82FA6E2C06445700061A37 /* ContentView.swift in Sources */,
+				CB82FAA42C0666C200061A37 /* SingleGameEndpoint.swift in Sources */,
+				CB2C65942C09CED10016BA98 /* PathObjects.swift in Sources */,
+				CB82FA962C065F8100061A37 /* GamesModel.swift in Sources */,
+				CB82FA6C2C06445700061A37 /* MozzartApp.swift in Sources */,
+				CB82FAB42C072F7C00061A37 /* ViewModel.swift in Sources */,
+				CB82FAC42C08DDF100061A37 /* KinoGamesView.swift in Sources */,
+				CB82FAAB2C066F3B00061A37 /* GameResultsModel.swift in Sources */,
+				CB82FA862C065B0700061A37 /* EnvironmentConfiguration.swift in Sources */,
+				CB82FAA62C066B8F00061A37 /* GamesService.swift in Sources */,
+				CB82FA8C2C065C6E00061A37 /* Requestable.swift in Sources */,
+				CB82FAAD2C06706A00061A37 /* GameResultsModelApi.swift in Sources */,
+				CB82FA992C065FBF00061A37 /* Encode_Decode_Helpers.swift in Sources */,
+				CB82FA7C2C064B0800061A37 /* SocketStream.swift in Sources */,
+				CB2C65982C0B46A00016BA98 /* ResultsView.swift in Sources */,
+				CB82FABA2C0772A500061A37 /* AnyPublisher + Extension.swift in Sources */,
+				CB2C65962C09D8530016BA98 /* GameView.swift in Sources */,
+				CB82FA9B2C06632100061A37 /* GamesModelApi.swift in Sources */,
+				CB82FAA82C066C5800061A37 /* SingleGameService.swift in Sources */,
+				CB82FA9D2C06638300061A37 /* GamesModelEndpoint.swift in Sources */,
+				CB82FA8A2C065C5A00061A37 /* HTTPMethod.swift in Sources */,
+				CB82FAC02C08AED600061A37 /* Stopwatch.swift in Sources */,
+				CB82FABE2C07C44600061A37 /* KinoCell.swift in Sources */,
+				CB2C659A2C0B77A40016BA98 /* ResultsCell.swift in Sources */,
+				CB82FA882C065C0E00061A37 /* NetworkConfiguration.swift in Sources */,
+				CB82FA932C065DED00061A37 /* NetworkError.swift in Sources */,
+				CB82FAAF2C06716000061A37 /* GameResultsEndpoint.swift in Sources */,
+				CB82FAB72C0745AA00061A37 /* KinoSegmentedControl.swift in Sources */,
+				CB82FAB12C06733F00061A37 /* GamesResultsService.swift in Sources */,
+				CB82FAA22C0666A200061A37 /* SingleGameModelApi.swift in Sources */,
+				CB82FABC2C0776C700061A37 /* WebView.swift in Sources */,
+				CB82FA7E2C064B3B00061A37 /* URLSessionWebSocketTask + Extension.swift in Sources */,
+				CB82FAC22C08D78D00061A37 /* View + Extension.swift in Sources */,
+				CB82FA7A2C0644C800061A37 /* WebSocketManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB82FA742C06445900061A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB82FA752C06445900061A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB82FA772C06445900061A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mozzart/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vuk.Mozzart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB82FA782C06445900061A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mozzart/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vuk.Mozzart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB82FA632C06445700061A37 /* Build configuration list for PBXProject "Mozzart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB82FA742C06445900061A37 /* Debug */,
+				CB82FA752C06445900061A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB82FA762C06445900061A37 /* Build configuration list for PBXNativeTarget "Mozzart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB82FA772C06445900061A37 /* Debug */,
+				CB82FA782C06445900061A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB82FA602C06445700061A37 /* Project object */;
+}
